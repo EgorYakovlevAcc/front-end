@@ -1,0 +1,39 @@
+.app-wrapper {
+    display: grid;
+
+    grid-template-areas:
+            "header header"
+            "navigation content"
+            "footer footer";
+
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 3fr 9fr;
+    /* расстояние между элементами*/
+    grid-gap: 10px;
+}
+/* HEADER */
+.header {
+    grid-area: header;
+    background-color: gainsboro;
+}
+.header img {
+    width: 50px;
+}
+
+/* CONTENT */
+.content {
+    grid-area: content;
+    background-color: mediumturquoise;
+}
+
+/* NAV */
+.nav {
+    grid-area: navigation;
+    background-color: lavender;
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    background-color: peru;
+}
